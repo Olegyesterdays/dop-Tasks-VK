@@ -7,7 +7,7 @@ const user1 = {
 
 const user2 = '{"name":"Oleg Yesterday`s","age":"19"}';
 
-const test = (user) => {
+const strToJsonAndViceVersa = (user) => {
     if (typeof user === 'object') {
         const userAnswer = JSON.stringify(user);
         console.log(userAnswer);
@@ -17,5 +17,5 @@ const test = (user) => {
     }
 }
 
-test(user1);
-test(user2);
+strToJsonAndViceVersa(user1);
+strToJsonAndViceVersa(user2);
