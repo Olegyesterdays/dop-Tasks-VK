@@ -5,12 +5,12 @@ const user1 = {
     age: 19
 }
 
-const user2 = '{"name":"Oleg Yesterday`s","age":"19"}';
+const user2 = '{"name":"Oleg Yesterday`s","age":19}';
 
 const strToJsonAndViceVersa = (user) => {
-    if (typeof user === 'object') {
+    if (typeof user === 'object' && user !== null) {
         console.log(JSON.stringify(user));
-    } else {
+    } else if(typeof user === 'string'){
         console.log(JSON.parse(user));
     }
 }
