@@ -5,9 +5,9 @@ const routes = {
 }
 
 export class Router {
-    invokeController() {
-        const ControllerClass = routes[window.location.pathname];
-        const controller = new ControllerClass();
+    routing() {
+        const URLAdres = routes[window.location.pathname];
+        const controller = new URLAdres();
         controller.process();
     }
 }
