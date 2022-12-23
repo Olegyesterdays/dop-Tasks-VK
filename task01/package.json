@@ -1,0 +1,19 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "compile": "handlebars ./paragraph/paragraph.handlebars -f ./paragraph/paragraph.precompiled.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2",
+    "handlebars": "4.7.7",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
